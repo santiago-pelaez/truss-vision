@@ -35,12 +35,14 @@ The API key stays on the backend in `GOOGLE_AI_API_KEY`. `GEMMA_MODEL` defaults 
 
 ```text
 trussvision/
+├── src/                         # Upstream simulator: canonical open-source app
+├── package.json                 # Upstream simulator build and deployment
 ├── README.md
 ├── SPECIFICATION.md
 ├── ARCHITECTURE.md
 ├── LICENSE
 ├── .gitignore
-├── frontend/
+├── frontend/                    # Truss-Vision migration prototype/reference app
 │   ├── package.json
 │   ├── tsconfig.json
 │   ├── tsconfig.node.json
@@ -70,6 +72,8 @@ trussvision/
 └── scripts/
     └── start-dev.ps1
 ```
+
+The root Vite app is the canonical submission target after integration. The `frontend/` app is a working Truss-Vision prototype containing the Gemma API client and review UI; it is retained until those features are ported into the root simulator.
 
 ## Data flow
 

@@ -30,6 +30,8 @@ See the framework decisions and file layout in [ARCHITECTURE.md](ARCHITECTURE.md
 
 ## Development setup
 
+Open `D:\hacktoberFest` or `trussvision.code-workspace` in VS Code. The repository currently contains the upstream simulator at the root and the Truss-Vision migration prototype under `frontend/`; the next implementation step is to move the Gemma upload/review flow into the root simulator while reusing its solver.
+
 Frontend:
 
 ```powershell
