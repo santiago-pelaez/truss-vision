@@ -10,7 +10,7 @@ def normalize_scene(scene: SceneModel) -> SceneModel:
     scene.loads = [load for load in scene.loads if load.node in node_ids]
 
     if scene.units == "relative":
-        scene.warnings.append("Coordinates are illustrative; confirm dimensions before calculating.")
+        scene.warnings.append("Coordinates use relative units; confirm dimensions before calculating.")
     if scene.spatial:
         scene.warnings.append("3D rendering is educational; full 3D equilibrium is not implemented.")
     if scene.confidence < 0.7:
