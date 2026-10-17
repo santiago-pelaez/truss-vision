@@ -1,0 +1,29 @@
+:root { color: #d8fbff; background: #020813; font-family: Inter, system-ui, sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input { font: inherit; }
+button { border: 1px solid #2c95aa; border-radius: 6px; padding: 0.7rem 0.9rem; color: #d8fbff; background: #08243a; cursor: pointer; }
+button:hover { background: #0d4b62; }
+.app-shell { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+.eyebrow { color: #42f6bc; letter-spacing: 0.15em; font-size: 0.75rem; }
+h1 { margin: 0; color: #00e5fa; font-size: clamp(2.4rem, 7vw, 5rem); }
+.panel { border: 1px solid #174e65; border-radius: 12px; background: #07192b; box-shadow: 0 0 24px #00e5fa12; }
+.controls { display: flex; flex-wrap: wrap; gap: 0.7rem; padding: 1rem; margin: 1.5rem 0 0.7rem; }
+.upload { display: inline-flex; align-items: center; gap: 0.6rem; border: 1px dashed #2c95aa; border-radius: 6px; padding: 0.7rem 0.9rem; cursor: pointer; }
+.upload input { max-width: 14rem; }
+.status { color: #ffc968; min-height: 1.5rem; }
+.hint { color: #77a9ba; font-size: 0.85rem; }
+.workspace { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 1rem; }
+.diagram-panel, .details { padding: 1rem; min-height: 500px; }
+.diagram { width: 100%; height: 420px; background: radial-gradient(circle, #10364e, #030c1c 70%); border-radius: 8px; }
+.member { stroke: #00e5fa; stroke-width: 4; }
+.member[role="button"] { cursor: pointer; }
+.member[role="button"]:hover { stroke: #ff637e; }
+.node { fill: #42f6bc; stroke: #d8fbff; stroke-width: 2; }
+text { fill: #d8fbff; font-size: 14px; }
+dt { color: #77a9ba; margin-top: 0.8rem; } dd { margin: 0.2rem 0 0; }
+pre { max-height: 230px; overflow: auto; background: #020813; padding: 0.7rem; font-size: 0.72rem; }
+.preview3d { height: 420px; display: grid; place-items: center; position: relative; overflow: hidden; background: radial-gradient(circle, #10364e, #030c1c 70%); border-radius: 8px; }
+.axis { position: absolute; padding: 0.5rem; border-radius: 50%; }
+.axis-x { color: #ff637e; right: 15%; bottom: 20%; }.axis-y { color: #87ffb2; left: 15%; top: 20%; }.axis-z { color: #72a6ff; right: 25%; top: 20%; }
+@media (max-width: 850px) { .workspace { grid-template-columns: 1fr; } }
