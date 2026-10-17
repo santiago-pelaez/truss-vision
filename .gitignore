@@ -13,5 +13,8 @@ Hacktoberfest 2026 Gemma Opening Ceremony.pdf
 .env.*
 !.env.example
 coverage.xml
+*.egg-info/
 
 .firebase/
+public/
+*.tsbuildinfo
